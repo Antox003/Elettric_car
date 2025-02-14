@@ -15,7 +15,7 @@ df = pd.read_csv(file_path)
 
 # Visualizzazione delle informazioni generali del dataset
 df.info()
-df.describe()
+print(df.describe())
 print("Dataset shape:", df.shape)
 print("Missing values:")
 print(df.isnull().sum())
