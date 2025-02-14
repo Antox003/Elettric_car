@@ -15,7 +15,7 @@ df = pd.read_csv(file_path)
 
 # Visualizzazione delle informazioni generali del dataset
 df.info()
-df.describe()
+print(df.describe())
 print("Dataset shape:", df.shape)
 print("Missing values:")
 print(df.isnull().sum())
@@ -92,7 +92,7 @@ plt.show()
 
 # Visualizzazione dell'albero di decisione
 dt = models["Decision Tree"]
-plt.figure(figsize=(20, 10))
+plt.figure(figsize=(10, 6))
 plot_tree(dt, feature_names=features, filled=True, rounded=True, max_depth=3)
 plt.title("Decision Tree Visualization")
 plt.show()
